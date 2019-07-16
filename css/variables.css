@@ -1,0 +1,42 @@
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0);
+        opacity: 0
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --page-h1: 60px;
+    --page-h2: 40px;
+    --h1: 32px;
+    --h2: 26px;
+    --h3: 22px;
+    --b1: 18px;
+    --b2: 16px;
+    --b3: 14px;
+    --color-red: #EE4266;
+    --color-dark-blue: #2047AD;
+    --color-purple: #9477D1;
+    --color-light-purple: #9477D199;
+}
