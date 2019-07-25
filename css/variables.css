@@ -35,8 +35,9 @@ body {
     --b1: 18px;
     --b2: 16px;
     --b3: 14px;
-    --color-red: #EE4266;
-    --color-dark-blue: #2047AD;
-    --color-purple: #9477D1;
+    --primary-color: #372248;
+    --color-red: #95413F;
+    --color-dark-blue: #495379;
+    --color-purple: #3E3C64;
     --color-light-purple: #9477D199;
 }

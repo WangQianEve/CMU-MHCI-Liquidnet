@@ -1,17 +1,8 @@
-function updateNavColor($anchor, $navbar) {
-    yPosition = window.pageYOffset;
-    if (yPosition >= $anchor.offset().top) {
-        $navbar.removeClass('homepage');
+function expandNav(elem) {
+    let nav_section = $(elem).parents('.nav-section');
+    if (nav_section.hasClass('opened')) {
+        nav_section.removeClass('opened');
     } else {
-        $navbar.addClass('homepage');
+        nav_section.addClass('opened');
     }
 }
-
-$(document).ready (function () {
-    const $navbar = $('.navbar');
-    const $nav_anchor = $('#nav_anchor');
-    window.onscroll = function() {
-        updateNavColor($nav_anchor, $navbar);
-    };
-});
-

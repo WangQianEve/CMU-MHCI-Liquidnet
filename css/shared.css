@@ -16,21 +16,11 @@
   text-transform: uppercase;
   font-weight: 600;
 }
-.page-title {
-  font-size: var(--page-h1);
-  line-height: 3em;
-  font-weight: 600;
-}
 .section-title-line {
   width: 170px;
   height: 6px;
   border-radius: 3px;
   margin-bottom: 50px;
-}
-.label {
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #999;
 }
 
 .text-center {
@@ -58,11 +48,6 @@
   padding: 30px;
   border: 2px solid #E7E7E7;
   display: flex;
-}
-.card-title {
-  font-size: var(--h3);
-  font-weight: 600;
-  line-height: 3em;
 }
 
 .icon {
@@ -96,9 +81,6 @@
   flex-direction: column;
 }
 
-.smaller-section {
-  margin: 30px 0;
-}
 .full {
   width: 100%;
 }
@@ -144,15 +126,6 @@
   font-size: var(--b1);
 }
 
-.red-bg {
-  background-color: var(--color-red);
-}
-.blue-bg {
-  background-color: var(--color-dark-blue);
-}
-.purple-bg {
-  background-color: var(--color-purple)
-}
 .bg-light-purple{
   background-color: #FAFAFD;
 }
@@ -410,11 +383,6 @@ button:focus {outline:0;}
 }
 
 /*inpage nav*/
-.inpage-nav {
-  position: fixed;
-  top: 30vh;
-  margin-left: 30px;
-}
 .inpage-nav .line {
   width: 2px;
   height: 80%;
@@ -436,9 +404,6 @@ button:focus {outline:0;}
   width: 12px;
   height: 12px;
   background-color: var(--color-purple);
-}
-.inpage-nav a .nav-section{
-  color: #999;
 }
 .inpage-nav a.active .nav-section{
   color: #000;
