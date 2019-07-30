@@ -105,6 +105,16 @@ img {
   font-style: italic;
   text-align: center;
 }
+.image audio {
+  width: 0;
+  height: 0;
+}
+.image .sound-image {
+  margin: 30px;
+}
+.image video {
+  width: 100%;
+}
 
 .buttons {
   display: flex;
@@ -597,6 +607,19 @@ a.go-to-project {
   }
   .next-center .card .card-title {
     font-size: 14px;
+  }
+
+  .footer-wrapper {
+    margin: 10px 0;
+    justify-content: center;
+    display: flex;
+    padding: 0px;
+    font-size: 8px;
+    color: #9B91A3;
+  }
+  .footer-wrapper img {
+    width: 70px;
+    margin-right: 10px;
   }
 }
 

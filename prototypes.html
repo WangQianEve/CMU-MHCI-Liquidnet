@@ -32,57 +32,58 @@
     <div class="inpage-nav">
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-overview">Overview</a>
+                <a href="#overview">Overview</a>
             </div>
         </div>
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-life-monitoring">Life Monitoring</a>
-                <a class="arrow" onclick="expandNav(this)">‹</a>
-            </div>
-            <div class="nav-sub-section" >
-                <a href="#sec-life-monitoring1">Life Monitoring 1</a>
-                <a href="#sec-life-monitoring2">Life Monitoring 2</a>
+                <a href="#visuals">Visual and Animation</a>
             </div>
         </div>
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-air-traffic">Air Traffic Control</a>
-                <a class="arrow" onclick="expandNav(this)">‹</a>
-            </div>
-            <div class="nav-sub-section" >
-                <a href="#sec-life-monitoring1">Life Monitoring</a>
-                <a href="#sec-life-monitoring2">Life Monitoring</a>
+                <a href="#actionable">Actionable Alerts</a>
             </div>
         </div>
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-idle-game">Idle Game</a>
-                <a class="arrow" onclick="expandNav(this)">‹</a>
-            </div>
-            <div class="nav-sub-section" >
-                <a href="#sec-life-monitoring1">Life Monitoring</a>
-                <a href="#sec-life-monitoring2">Life Monitoring</a>
+                <a href="#informational">Informational Alerts</a>
             </div>
         </div>
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-e-commerce">E-Commerce</a>
-                <a class="arrow" onclick="expandNav(this)">‹</a>
-            </div>
-            <div class="nav-sub-section" >
-                <a href="#sec-life-monitoring1">Life Monitoring</a>
-                <a href="#sec-life-monitoring2">Life Monitoring</a>
+                <a href="#grouped">Grouped Alerts</a>
             </div>
         </div>
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-end-user">End User Product</a>
+                <a href="#minimized">Minimized View</a>
+            </div>
+        </div>
+        <div class="nav-section">
+            <div class="nav-sec-title">
+                <a href="#customizable">Custimizable Alerts</a>
                 <a class="arrow" onclick="expandNav(this)">‹</a>
             </div>
             <div class="nav-sub-section" >
-                <a href="#sec-life-monitoring1">Life Monitoring</a>
-                <a href="#sec-life-monitoring2">Life Monitoring</a>
+                <a href="#customizable1">Dashboard</a>
+                <a href="#customizable2">In The Context</a>
+                <a href="#customizable3">User Defined Alert</a>
+            </div>
+        </div>
+        <div class="nav-section">
+            <div class="nav-sec-title">
+                <a href="#communication">Communication</a>
+                <a class="arrow" onclick="expandNav(this)">‹</a>
+            </div>
+            <div class="nav-sub-section" >
+                <a href="#communication1">Report Building</a>
+                <a href="#communication2">Alert Sharing</a>
+            </div>
+        </div>
+        <div class="nav-section">
+            <div class="nav-sec-title">
+                <a href="#searchAndNav">Search and Navigation</a>
             </div>
         </div>
     </div>
@@ -92,19 +93,21 @@
     <div id="overview" class="section page-title-sec">
         <img class="page-icon" src="images/triagles.svg">
         <div class="page-title">Prototypes</div>
-        <div class="page-intro">We conceptualized findings from secondary research and analogous domains into design guidelines that summarize the state-of-the-art practices.</div>
+        <div class="page-intro">With analogous domain and design guidelines, we translated inspirations into prototypes which are validated by actual traders and proxy users.</div>
     </div>
     <div id="visuals" class="section">
         <div class="smaller-section">
             <div class="h2">Visual and Animation</div>
         </div>
-        <div id="attention1" class="smaller-section flex-h mobile-v">
+        <div class="smaller-section flex-h mobile-v">
             <div class="image left">
-                <img src="images/guidelines/getting-attention-1.png" alt="">
+                <video autoplay loop muted>
+                    <source src="images/prototypes/Urgency.webm" type="video/webm">
+                </video>
             </div>
             <div>
-                <div class="h3">Ensuring safe, orderly flows of air traffic at airports</div>
-                <p>Attention is the most valuable resource traders have, and the value of an alert system is to help traders allocate their attention efficiently in a not annoying fashion. As every alert is an interruption to the on-going tasks, only be alarming when the alert requires immediate attention and present the rest of the alerts calmly. In the long run, the system will gain credibility for its accuracy and trust from traders.</p>
+                <div class="h3">Making urgent alerts visually distinguished</div>
+                <p>After an audio signal gets traders' attention, they need to know how an alert is with a glance. With different iterations and testing, we found that using background colors with different saturation is the best way to differentiate high and low priority. </p>
             </div>
         </div>
         <div class="smaller-section">
@@ -116,11 +119,149 @@
                 </div>
             </div>
             <div class="space-above flex-h btns-wrapper mobile-v">
-                <div class="btn-sec-title">Related Prototypes</div>
+                <div class="btn-sec-title">Related Guidelines</div>
                 <div class="buttons">
-                    <a href="prototypes.html#visuals" class="button-solid dir">Visual and Animation</a>
-                    <a href="prototypes.html#minimized" class="button-solid dir">Minimized View</a>
-                    <a href="prototypes.html#customizable" class="button-solid dir">Customizable Alert</a>
+                    <a href="guidelines.html#attention" class="button-solid dir">Getting Attention</a>
+                    <a href="guidelines.html#fatigue" class="button-solid dir">Alarm Fatigue</a>
+                </div>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="separation-line"></div>
+        </div>
+    </div>
+    <div id="actionable" class="section">
+        <div class="smaller-section">
+            <div class="h2">Actionable Alerts</div>
+        </div>
+        <div class="smaller-section flex-h mobile-v">
+            <div class="image left">
+                <video autoplay loop muted>
+                    <source src="images/prototypes/Actionable.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <div class="h3">Layering the information</div>
+                <p>Only keep the essentials upfront but design for additional access to noncrucial information. Expanded views are a good option to layer directly related information with different impact on decision making. </p>
+                <p>This keeps the main alert content to the bare minimum while offering users choices to do more in the system.</p>
+                <div class="h3">Providing Justification</div>
+                <p>Attention is the most valuable resource traders have. The value of an alert system is to help traders allocate their attention efficiently in a not annoying fashion. As every alert is an interruption to the on-going tasks, only be alarming when the alert requires immediate attention, and alert the rest in a calm manner.</p>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Found in Domains</div>
+                <div class="buttons">
+                    <a href="domains.html#incremental-game" class="button-solid dir">Incremental Game</a>
+                    <a href="domains.html#life-monitoring" class="button-solid dir">Life Monitoring</a>
+                </div>
+            </div>
+            <div class="space-above flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Related Guidelines</div>
+                <div class="buttons">
+                    <a href="guidelines.html#action" class="button-solid dir">Call to Actionn</a>
+                    <a href="guidelines.html#trust" class="button-solid dir">Building Trust</a>
+                </div>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="separation-line"></div>
+        </div>
+    </div>
+    <div id="informational" class="section">
+        <div class="smaller-section">
+            <div class="h2">Informational Alerts</div>
+        </div>
+        <div class="smaller-section flex-h mobile-v">
+            <div class="image left">
+                <video autoplay loop muted>
+                    <source src="images/prototypes/Informational.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <div class="h3">Providing Trading Spesific Data</div>
+                <p>Traders want an array of proprietary information that is custom-tailored to what they are monitoring in their trading strategy.  Having the trading data be specific to customized information such as abnormal pricing movements helps traders to figure their next move. </p>
+                <div class="h3">Distinguish Informational alerts from acionable alerts</div>
+                <p>Distinguishing actionable from informational alerts is a matter of valuing priority in the design: traders will want to promptly know what alerts they need to take into consideration immediately. The expanded view will allow them to drill down on relevant details that correspond to the summary alert content.</p>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Found in Domains</div>
+                <div class="buttons">
+                    <a href="domains.html#air-traffic" class="button-solid dir">Air Traffic Control</a>
+                </div>
+            </div>
+            <div class="space-above flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Related Guidelines</div>
+                <div class="buttons">
+                    <a href="guidelines.html#action" class="button-solid dir">Call to Actionn</a>
+                    <a href="guidelines.html#trust" class="button-solid dir">Building Trust</a>
+                </div>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="separation-line"></div>
+        </div>
+    </div>
+    <div id="grouped" class="section">
+        <div class="smaller-section">
+            <div class="h2">Grouped Alerts</div>
+        </div>
+        <div class="smaller-section flex-h mobile-v">
+            <div class="image left">
+                <video autoplay loop muted>
+                    <source src="images/prototypes/Grouping.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <div class="h3">Providing a summery</div>
+                <p>Headers should convey strongly correlated meanings about shared actions and goals in grouped alerts.  Categories like symbols and types of alerts are frequent choices of groupings that traders would use. Traders value accompanying headings with suggested actions the most.  </p>
+                <div class="h3">Letting users to set their rules</div>
+                <p>Traders generally want to have the ability to customize the alerts to their own preferences and needs but value settings that allow for automatic groupings. For example, some traders prefer setting algo alerts separate from other grouped alerts, while others did not express this particular preference. </p>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Related Guidelines</div>
+                <div class="buttons">
+                    <a href="guidelines.html#action" class="button-solid dir">Call to Action</a>
+                    <a href="guidelines.html#fatigue" class="button-solid dir">Alarm Fatigue</a>
+                </div>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="separation-line"></div>
+        </div>
+    </div>
+    <div id="minimized" class="section">
+        <div class="smaller-section">
+            <div class="h2">Minimized View</div>
+        </div>
+        <div class="smaller-section mobile-v">
+            <div class="image full">
+                <video autoplay loop muted>
+                    <source src="images/prototypes/Minimized.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <div class="h3">Saving Screen Real Estate</div>
+                <p>Traders value the ability to see equivalent information in a smaller amount of space. They preferred this minimized view that showed them the information they needed to know and is not intrusive with their current workflow. </p>
+                <div class="h3">Serving as a gateway to the system</div>
+                <p>This particular design helps traders still get value from Liquidnet on occasions where the app is not open. It serves as a good entry point into the system as well, providing targeted information that gives context to how traders can best use Liquidnet to serve their trades. </p>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Found in Domains</div>
+                <div class="buttons">
+                    <a href="domains.html#life-monitoring" class="button-solid dir">Life Monitoring</a>
+                </div>
+            </div>
+            <div class="space-above flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Related Guidelines</div>
+                <div class="buttons">
+                    <a href="guidelines.html#attention" class="button-solid dir">Getting Attention</a>
                 </div>
             </div>
         </div>
@@ -134,45 +275,49 @@
         </div>
         <div id="customizable1" class="smaller-section flex-h mobile-v">
             <div class="image left">
-                <img src="images/guidelines/getting-attention-1.png" alt="">
+                <img src="images/prototypes/dashboard.png" alt="">
             </div>
             <div>
-                <div class="h3">Ensuring safe, orderly flows of air traffic at airports</div>
-                <p>Attention is the most valuable resource traders have, and the value of an alert system is to help traders allocate their attention efficiently in a not annoying fashion. As every alert is an interruption to the on-going tasks, only be alarming when the alert requires immediate attention and present the rest of the alerts calmly. In the long run, the system will gain credibility for its accuracy and trust from traders.</p>
+                <div class="h3">Dashboard for setting customized default</div>
+                <p>In this dashboard, traders have full control over what are the types of alert they want to enable or disable, and for the enabled alerts, how do they want to be alerted visually and audibly.</p>
             </div>
         </div>
         <div id="customizable2" class="smaller-section flex-h mobile-v">
             <div class="image left">
-                <img src="images/guidelines/getting-attention-1.png" alt="">
+                <video autoplay loop muted>
+                    <source src="images/prototypes/Customization.webm" type="video/webm">
+                </video>
             </div>
             <div>
-                <div class="h3">Ensuring safe, orderly flows of air traffic at airports</div>
-                <p>Attention is the most valuable resource traders have, and the value of an alert system is to help traders allocate their attention efficiently in a not annoying fashion. As every alert is an interruption to the on-going tasks, only be alarming when the alert requires immediate attention and present the rest of the alerts calmly. In the long run, the system will gain credibility for its accuracy and trust from traders.</p>
+                <div class="h3">Allowing fine-tuning in the context</div>
+                <p>When traders are presented with an alert, they have easy access to customizing it by clicking into the menu of the single alert. This will increase the discoverability of the feature, and let traders customize their alert without moving away from their workflow.</p>
             </div>
         </div>
         <div id="customizable3" class="smaller-section flex-h mobile-v">
             <div class="image left">
-                <img src="images/guidelines/getting-attention-1.png" alt="">
+                <video autoplay loop muted>
+                    <source src="images/prototypes/user%20defined%20alert.webm" type="video/webm">
+                </video>
             </div>
             <div>
-                <div class="h3">Ensuring safe, orderly flows of air traffic at airports</div>
-                <p>Attention is the most valuable resource traders have, and the value of an alert system is to help traders allocate their attention efficiently in a not annoying fashion. As every alert is an interruption to the on-going tasks, only be alarming when the alert requires immediate attention and present the rest of the alerts calmly. In the long run, the system will gain credibility for its accuracy and trust from traders.</p>
+                <div class="h3">User Defined Alert</div>
+                <p>Traders can create their own alerts by typing in natural language, for exmaple “Alert me when AAPL hit 220”. Alternatively, they can also create a new alert by selecting in the drop down menu.</p>
             </div>
         </div>
         <div class="smaller-section">
             <div class="flex-h btns-wrapper mobile-v">
                 <div class="btn-sec-title">Found in Domains</div>
                 <div class="buttons">
-                    <a href="domains.html#air-traffic-control" class="button-solid dir">Air Traffic Control</a>
                     <a href="domains.html#life-monitoring" class="button-solid dir">Life Monitoring</a>
+                    <a href="domains.html#incremental-game" class="button-solid dir">Incremental  Game</a>
                 </div>
             </div>
             <div class="space-above flex-h btns-wrapper mobile-v">
-                <div class="btn-sec-title">Related Prototypes</div>
+                <div class="btn-sec-title">Related Guidelines</div>
                 <div class="buttons">
-                    <a href="prototypes.html#visuals" class="button-solid dir">Visual and Animation</a>
-                    <a href="prototypes.html#minimized" class="button-solid dir">Minimized View</a>
-                    <a href="prototypes.html#customizable" class="button-solid dir">Customizable Alert</a>
+                    <a href="guidelines.html#attention" class="button-solid dir">Getting Attention</a>
+                    <a href="guidelines.html#fatigue" class="button-solid dir">Alarm Fatigue</a>
+                    <a href="guidelines.html#customization" class="button-solid dir">Customization</a>
                 </div>
             </div>
         </div>
@@ -180,20 +325,57 @@
             <div class="separation-line"></div>
         </div>
     </div>
-    <div class="section references">
-        <div class="flex-h">
-            <div class="h2">Reference</div>
-            <a class="arrow-ref to-the-right" onclick="expandRef(this)">‹</a>
+    <div id="communication" class="section">
+        <div class="smaller-section">
+            <div class="h2">Facilitating Communication</div>
         </div>
-        <div class="references-content">
-            <div class="title">Getting Attention</div>
-            <p>Attuning Notification Design to User Goals and Attention Costs McCrickard, D. Scott, and Christa M. Chewar. "Attuning notification design to user goals and attention costs." Communications of the ACM 46.3 (2003): 67-72.</p>
-            <p>How Functional Animation Helps Improve User Experience https://www.smashingmagazine.com/2017/01/how-functional-animation-helps-improve-user-experience/</p>
-            <p>Sound Advice: A Quick Guide to Designing UX Sounds https://www.toptal.com/designers/ux/ux-sounds-guide</p>
-            <div class="title">Call to Action</div>
-            <p>How To Design Notifications For Better UX https://uxplanet.org/how-to-design-notifications-for-better-ux-6fb0711be54d</p>
+        <div id="communication1" class="smaller-section mobile-v">
+            <div class="image full">
+                <video autoplay loop muted>
+                    <source src="images/prototypes/Report.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <div class="h3">Building reports efficiently to align stakeholders</div>
+                <p>An important part of traders' job is to report the performance of their trades to portfolio managers and clients. Currently, building reports is a very manual and laborious process that requires traders to work across multiple applications - Bloomberg, Excel, Emails, OMS, analytics platforms, and more.</p>
+                <p>This feature will ease the workload of building reports by purposing a report draft and letting traders edit the report using the user-friendly editor. With this feature, the analytics in Liquidnet will bring values to traders with not just informing their trades but help to align their stakeholders.</p>
+            </div>
+        </div>
+        <div id="communication2" class="smaller-section flex-h mobile-v">
+            <div class="image left">
+                <video autoplay loop muted>
+                    <source src="images/prototypes/Sharing.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <div class="h3">Sharing alerts with fellow traders</div>
+                <p>Traders work in teams to achieve the investment goal their organization set for. When traders need to be away from their desks, the sharing and comment feature will enable traders to let their colleagues handle their orders while they are away. </p>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="separation-line"></div>
         </div>
     </div>
+    <div id="searchAndNav" class="section">
+        <div class="smaller-section">
+            <div class="h2">Search and Navigation</div>
+        </div>
+        <div class="smaller-section mobile-v">
+            <div class="image full">
+                <video autoplay loop muted>
+                    <source src="images/prototypes/search%20and%20nav.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <div class="h3">Efficient access to information in Liquidnet</div>
+                <p>While alert stream “push” information to users, the multi-functional search bar will provide a one-stop-shop for traders to “pull” information from the Liquidnet system efficiently. While traders issue and query in the search bar (e.g. Names, > 5% ADV), related alerts and analytics will be surfaced and highlighted, and traders can see all the information without jumping between windows.</p>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="separation-line"></div>
+        </div>
+    </div>
+
     <div class="section next-center">
         <div class="label">PREVIOUS STEP</div>
         <a href="domains.html">
@@ -203,10 +385,10 @@
             </div>
         </a>
     </div>
-</div>
-<div class="footer-wrapper">
-    <img src="images/combo-logo-color.svg">
-    <div>Copyright © 2019 Designed and Coded by Team Trufflin</div>
+    <div class="footer-wrapper">
+        <img src="images/combo-logo-color.svg">
+        <div>Copyright © 2019 Designed and Coded by Team Trufflin</div>
+    </div>
 </div>
 </body>
 </html>

@@ -32,57 +32,61 @@
         <div class="inpage-nav">
             <div class="nav-section">
                 <div class="nav-sec-title">
-                    <a href="#sec-overview">Overview</a>
+                    <a href="#overview">Overview</a>
                 </div>
             </div>
             <div class="nav-section">
                 <div class="nav-sec-title">
-                    <a href="#sec-life-monitoring">Life Monitoring</a>
+                    <a href="#attention">Getting Attention</a>
                     <a class="arrow" onclick="expandNav(this)">‹</a>
                 </div>
                 <div class="nav-sub-section" >
-                    <a href="#sec-life-monitoring1">Life Monitoring 1</a>
-                    <a href="#sec-life-monitoring2">Life Monitoring 2</a>
+                    <a href="#attention1">High Threshold</a>
+                    <a href="#attention2">Ambient Alert</a>
+                    <a href="#attention3">Repetitive Tolerance</a>
                 </div>
             </div>
             <div class="nav-section">
                 <div class="nav-sec-title">
-                    <a href="#sec-air-traffic">Air Traffic Control</a>
+                    <a href="#action">Call to Action</a>
                     <a class="arrow" onclick="expandNav(this)">‹</a>
                 </div>
                 <div class="nav-sub-section" >
-                    <a href="#sec-life-monitoring1">Life Monitoring</a>
-                    <a href="#sec-life-monitoring2">Life Monitoring</a>
+                    <a href="#action1">Visual Hierarchy</a>
+                    <a href="#action2">Call-To-Action</a>
+                    <a href="#action3">Summary and Highlights</a>
                 </div>
             </div>
             <div class="nav-section">
                 <div class="nav-sec-title">
-                    <a href="#sec-idle-game">Idle Game</a>
+                    <a href="#fatigue">Avoiding Fatigue</a>
                     <a class="arrow" onclick="expandNav(this)">‹</a>
                 </div>
                 <div class="nav-sub-section" >
-                    <a href="#sec-life-monitoring1">Life Monitoring</a>
-                    <a href="#sec-life-monitoring2">Life Monitoring</a>
+                    <a href="#fatigue1">Alarm Data and Report</a>
+                    <a href="#fatigue2">Suspend Alerts</a>
+                    <a href="#fatigue3">Customize Alarm Threshold</a>
                 </div>
             </div>
             <div class="nav-section">
                 <div class="nav-sec-title">
-                    <a href="#sec-e-commerce">E-Commerce</a>
+                    <a href="#customization">Customization</a>
                     <a class="arrow" onclick="expandNav(this)">‹</a>
                 </div>
                 <div class="nav-sub-section" >
-                    <a href="#sec-life-monitoring1">Life Monitoring</a>
-                    <a href="#sec-life-monitoring2">Life Monitoring</a>
+                    <a href="#customization1">A Good Default</a>
+                    <a href="#customization2">Easy to Discover</a>
+                    <a href="#customization3">Layering</a>
                 </div>
             </div>
             <div class="nav-section">
                 <div class="nav-sec-title">
-                    <a href="#sec-end-user">End User Product</a>
+                    <a href="#trust">Building Trust</a>
                     <a class="arrow" onclick="expandNav(this)">‹</a>
                 </div>
                 <div class="nav-sub-section" >
-                    <a href="#sec-life-monitoring1">Life Monitoring</a>
-                    <a href="#sec-life-monitoring2">Life Monitoring</a>
+                    <a href="#trust1">Build Trust Gradually</a>
+                    <a href="#trust2">Explain Key Component</a>
                 </div>
             </div>
         </div>
@@ -95,7 +99,6 @@
         </div>
         <div id="attention" class="section">
             <div class="smaller-section">
-                <div class="label">SECONDARY HEADING</div>
                 <div class="h2">Getting Attention</div>
             </div>
             <div id="attention1" class="smaller-section flex-h mobile-v">
@@ -122,15 +125,18 @@
                     <div class="h3">3. Design for repetitive tolerance</div>
                     <p>A sound and animation may be pleasant when the first time, but consider what may users feel if they need to interact with it 100 times a day. To design for repetitive tolerance, the sound and the associated animation should not last longer than 0.3 seconds.</p>
                 </div>
-                <div class="image right">
-                    <img src="images/guidelines/getting-attention-3.png" alt="">
+                <div class="image right even-wrapper">
+                    <audio controls id="sound-do"><source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg"></audio>
+                    <audio controls id="sound-dont"><source src="http://www.w3schools.com/html/horse.mp3" type="audio/mpeg"></audio>
+                    <img class="sound-image" src="images/do-play.svg" alt="" onclick="document.getElementById('sound-do').play();">
+                    <img class="sound-image" src="images/dont-play.svg" alt="" onclick="document.getElementById('sound-dont').play();">
                 </div>
             </div>
             <div class="smaller-section">
                 <div class="flex-h btns-wrapper mobile-v">
                     <div class="btn-sec-title">Found in Domains</div>
                     <div class="buttons">
-                        <a href="domains.html#air-traffic-control" class="button-solid dir">Air Traffic Control</a>
+                        <a href="domains.html#air-traffic" class="button-solid dir">Air Traffic Control</a>
                         <a href="domains.html#life-monitoring" class="button-solid dir">Life Monitoring</a>
                     </div>
                 </div>
@@ -157,8 +163,8 @@
                     <p>Information hierarchy gives users an intuitive guide of how they should navigate the information presented to them. By chunking information into bite-size, users can consume the alerts more efficiently, especially in a busy environment where users have short attention spans for incoming information.</p>
                 </div>
                 <div class="image right">
-                    <img src="images/guidelines/getting-attention-1.png" alt="">
-                    <div class="caption">Example for visual heirarchy. Source: ScienceDirect</div>
+                    <img src="images/guidelines/guideline-visual-heirarch.jpg" alt="">
+                    <div class="caption">Example for visual hierarchy. Source: ScienceDirect</div>
                 </div>
             </div>
             <div id="action2" class="smaller-section flex-h mobile-v">
@@ -167,24 +173,79 @@
                     <p>Call-to-action (CTA) is a marketing term referring to interactions designed to prompt immediate actions. Call-to-action is usually a button that is saturated in color, more prominent than other elements, and there should only be one CTA at a time.</p>
                 </div>
                 <div class="image right">
-                    <img src="images/guidelines/getting-attention-2.png" alt="">
+                    <img src="images/guidelines/guideline-call-to-action.png" alt="">
                     <div class="caption">The call to action button on Spotify’s mobile homescreen</div>
                 </div>
             </div>
             <div id="action3" class="smaller-section flex-h mobile-v">
                 <div>
-                    <div class="h3">3. Design for repetitive tolerance</div>
-                    <p>A sound and animation may be pleasant when the first time, but consider what may users feel if they need to interact with it 100 times a day. To design for repetitive tolerance, the sound and the associated animation should not last longer than 0.3 seconds.</p>
+                    <div class="h3">3. Communicate smart by giving a summary and highlights</div>
+                    <p>Apply effective communication between people to the alert system. A person's working memory can hold seven items. When there are many alerts of the same type, provide a summary to reduce the effort for processing the information for users. Present a high-level overview. Then Details can be provided after users expand the notifications.</p>
                 </div>
                 <div class="image right">
-                    <img src="images/guidelines/getting-attention-3.png" alt="">
+                    <img src="images/guidelines/guideline-grouping.png" alt="">
+                    <div class="caption">Grouped notifications from Gmail’s mobile application</div>
                 </div>
             </div>
             <div class="smaller-section">
                 <div class="flex-h btns-wrapper">
                     <div class="btn-sec-title">Found in Domains</div>
                     <div class="buttons">
-                        <a href="domains.html#air-traffic-control" class="button-solid dir">Air Traffic Control</a>
+                        <a href="domains.html#air-traffic" class="button-solid dir">Air Traffic Control</a>
+                        <a href="domains.html#incremental-game" class="button-solid dir">Incremental  Game</a>
+                    </div>
+                </div>
+                <div class="space-above flex-h btns-wrapper">
+                    <div class="btn-sec-title">Related Prototypes</div>
+                    <div class="buttons">
+                        <a href="prototypes.html#action" class="button-solid dir">Actionable Alerts</a>
+                        <a href="prototypes.html#informational" class="button-solid dir">Informational Alerts</a>
+                        <a href="prototypes.html#grouped" class="button-solid dir">Grouped Alert</a>
+                    </div>
+                </div>
+            </div>
+            <div class="smaller-section">
+                <div class="separation-line"></div>
+            </div>
+        </div>
+        <div id="fatigue" class="section">
+            <div class="smaller-section">
+                <div class="h2">Getting Attention</div>
+            </div>
+            <div id="fatigue1" class="smaller-section flex-h mobile-v">
+                <div>
+                    <div class="h3">1. Providing alarm data and report</div>
+                    <p>Whether alarm fatigue is happening can be measured with the signal detection theory. If users are missing too many signals, either alarm fatigue is becoming an issue or the system is not presenting the alarm effectively. In a clinical alarm management system, weekly reports are provided to let managers identify trends and adjust their practices. Content in the report may include total weekly alarms per unit, duration of alarms by types, duration to respond to nurse calls, etc.</p>
+                </div>
+                <div class="image right">
+                    <img src="images/guidelines/guideline-falsealarm.png" alt="">
+                    <div class="caption">Signal Detection Matrix</div>
+                </div>
+            </div>
+            <div id="fatigue2" class="smaller-section flex-h mobile-v">
+                <div>
+                    <div class="h3">2. Suspend alerts that do not require immediate action</div>
+                    <p>A powerful way to reduce alarm fatigue is to delay forwarding information that does not require immediate action, or only send over a summery during users' downtime. At Johns Hopkins Health System, crisis alarms are sent immediately to the nurse, while technical alarms (e.g., lead failures or bed disconnects) can be delayed or sometimes auto-corrected or silenced. During one week, 61,227 warning levels alarms on our physiological monitors, only 3,103 of these were messaged out to mobile devices.</p>
+                </div>
+                <div class="image right">
+                    <img src="images/guidelines/" alt="">
+                    <div class="caption"></div>
+                </div>
+            </div>
+            <div id="fatigue3" class="smaller-section flex-h mobile-v">
+                <div>
+                    <div class="h3">3. Customize alarm threshold and calibrate continuously</div>
+                    <p>Setting a threshold for firing an alert and directing alerts only to accountable personnel are powerful ways to reduce alarm fatigue. At Johns Hopkins Health System, the alert algorithm is customized based on the demographics of the patients, clinical workflows, time of the day, staffing schedules ... etc. Nurses are encouraged to adjust the alert threshold without physicians' orders to make monitor more actionable. </p>
+                </div>
+                <div class="image right">
+                    <img src="images/guidelines/" alt="">
+                    <div class="caption"></div>
+                </div>
+            </div>
+            <div class="smaller-section">
+                <div class="flex-h btns-wrapper">
+                    <div class="btn-sec-title">Found in Domains</div>
+                    <div class="buttons">
                         <a href="domains.html#life-monitoring" class="button-solid dir">Life Monitoring</a>
                     </div>
                 </div>
@@ -192,8 +253,103 @@
                     <div class="btn-sec-title">Related Prototypes</div>
                     <div class="buttons">
                         <a href="prototypes.html#visuals" class="button-solid dir">Visual and Animation</a>
-                        <a href="prototypes.html#minimized" class="button-solid dir">Minimized View</a>
+                        <a href="prototypes.html#grouped" class="button-solid dir">Grouped Alert</a>
                         <a href="prototypes.html#customizable" class="button-solid dir">Customizable Alert</a>
+                    </div>
+                </div>
+            </div>
+            <div class="smaller-section">
+                <div class="separation-line"></div>
+            </div>
+        </div>
+        <div id="customization" class="section">
+            <div class="smaller-section">
+                <div class="h2">Customization</div>
+            </div>
+            <div id="customization1" class="smaller-section flex-h mobile-v">
+                <div>
+                    <div class="h3">1. Having a good default</div>
+                    <p>Customization lets users make their selections about what they want to see, or set preferences for organizing and displaying information. First of all, make the system usable and useful without customization. Many users to do not use the customization even if the feature we. Customization should be an add-on to an already enjoyable experience rather than asking users to fix the experience themselves.</p>
+                </div>
+                <div class="image right">
+                    <img src="images/guidelines/guideline-customization-default.jpg" alt="">
+                    <div class="caption">Many users to do change the default wallpaper on their desktop or mobile phone</div>
+                </div>
+            </div>
+            <div id="customization2" class="smaller-section flex-h mobile-v">
+                <div>
+                    <div class="h3">2. Make it easy to discover</div>
+                    <p>Since configuring the system is not users’ primary goal, users will not look for customization and use it for the sake of using it. Customization features should be placed near the content they relate to and be presented in a manner in which users can see how it will assist with their primary goal in the system.</p>
+                </div>
+                <div class="image right">
+                    <img src="images/guidelines/guideline-customization-discovery.png" alt="">
+                    <div class="caption">LinkedIn allows users to customize what notification users want to receive. “Turn off” is placed close to the items and is easy to discover.</div>
+                </div>
+            </div>
+            <div id="customization3" class="smaller-section flex-h mobile-v">
+                <div>
+                    <div class="h3">3. Layering the customization features</div>
+                    <p>When there is a rich option set, avoid overwhelming users. Only show users the most useful customization options at first and deferred other options to “advanced options.”</p>
+                </div>
+                <div class="image right">
+                    <img src="images/guidelines/guideline-layering.png" alt="">
+                    <div class="caption">Slack provides a set of color themes for users to select from, hiding the advanced options behind a button.</div>
+                </div>
+            </div>
+            <div class="smaller-section">
+                <div class="flex-h btns-wrapper">
+                    <div class="btn-sec-title">Found in Domains</div>
+                    <div class="buttons">
+                        <a href="domains.html#life-monitoring" class="button-solid dir">Life Monitoring</a>
+                    </div>
+                </div>
+                <div class="space-above flex-h btns-wrapper">
+                    <div class="btn-sec-title">Related Prototypes</div>
+                    <div class="buttons">
+                        <a href="prototypes.html#customizable" class="button-solid dir">Customizable Alert</a>
+                    </div>
+                </div>
+            </div>
+            <div class="smaller-section">
+                <div class="separation-line"></div>
+            </div>
+        </div>
+        <div id="trust" class="section">
+            <div class="smaller-section">
+                <div class="h2">Building Trust</div>
+            </div>
+            <div id="trust1" class="smaller-section flex-h mobile-v">
+                <div>
+                    <div class="h3">1. Build Trust Gradually</div>
+                    <p>Many systems need users’ data to function, and getting data from users requires trust and commitment. Let users experience the product first, and do not be too eager to get data from users upfront. If they feel negative upon first trying it out, they might never try again. After users experience the product and benefit from it, encourage users to share data gradually. For example, in the trading scenario, traders will feel more comfortable about automating course correction after taking Liquidnet’s advice and resulting in successful trades.</p>
+                </div>
+                <div class="image right">
+                    <img src="images/guidelines/trust1.png" alt="">
+                    <div class="caption">The honestbee website ask for user’s personal information before letting users to experience the product</div>
+                </div>
+            </div>
+            <div id="trust2" class="smaller-section flex-h mobile-v">
+                <div>
+                    <div class="h3">2. Explain the key component of how the system works</div>
+                    <p>When a system suggests actions to traders, they need a certain level of understanding of how the system works in order to take the suggestion. The explanation can include but not limited to data sources, mechanism of algorithms, confidence level, potential outcome, restrictions. Traders need the right amount of information, and a balance needs to be found between providing too little information and being verbose.</p>
+                </div>
+                <div class="image right">
+                    <img src="images/guidelines/trust2.png" alt="">
+                    <div class="caption">Amazon explains why it recommend certain items concisely.</div>
+                </div>
+            </div>
+            <div class="smaller-section">
+                <div class="flex-h btns-wrapper">
+                    <div class="btn-sec-title">Found in Domains</div>
+                    <div class="buttons">
+                        <a href="domains.html#incremental-game" class="button-solid dir">Incremental Game</a>
+                    </div>
+                </div>
+                <div class="space-above flex-h btns-wrapper">
+                    <div class="btn-sec-title">Related Prototypes</div>
+                    <div class="buttons">
+                        <a href="prototypes.html#actionable" class="button-solid dir">Actionable Alerts</a>
+                        <a href="prototypes.html#informational" class="button-solid dir">Informational Alerts</a>
                     </div>
                 </div>
             </div>
@@ -213,6 +369,17 @@
                 <p>Sound Advice: A Quick Guide to Designing UX Sounds https://www.toptal.com/designers/ux/ux-sounds-guide</p>
                 <div class="title">Call to Action</div>
                 <p>How To Design Notifications For Better UX https://uxplanet.org/how-to-design-notifications-for-better-ux-6fb0711be54d</p>
+                <div class="title">Avoiding Alarm Fatigue</div>
+                <p>5 Technology tools for reducing alarm fatigue - Becker's Hospital Review https://www.beckershospitalreview.com/healthcare-information-technology/5-technology-tools-for-reducing-alarm-fatigue.html</p>
+                <p>Signal Detection & UX Design https://www.slideshare.net/LilyZimmerman/signal-detection-ux-design-a-look-at-instagrams-notification-feed</p>
+                <div class="title">Customization</div>
+                <p>7 Tips for Successful Customization https://www.nngroup.com/articles/customization/?lm=customization-personalization&pt=article</p>
+                <p>Customization vs. Personalization in the User Experience https://www.nngroup.com/articles/customization-personalization/</p>
+                <div class="title">Building Trust</div>
+                <p>Trustworthiness in Web Design: 4 Credibility Factors https://www.nngroup.com/articles/trustworthy-design/</p>
+                <p>Comparison Tables for Products, Services, and Features https://www.nngroup.com/articles/comparison-tables/</p>
+                <p>UX Guidelines for Recommended Content https://www.nngroup.com/articles/recommendation-guidelines/</p>
+                <p>People + AI Guidebook https://pair.withgoogle.com/</p>
             </div>
         </div>
         <div class="section next-center">
@@ -224,10 +391,10 @@
                 </div>
             </a>
         </div>
-    </div>
-    <div class="footer-wrapper">
-        <img src="images/combo-logo-color.svg">
-        <div>Copyright © 2019 Designed and Coded by Team Trufflin</div>
+        <div class="footer-wrapper">
+            <img src="images/combo-logo-color.svg">
+            <div>Copyright © 2019 Designed and Coded by Team Trufflin</div>
+        </div>
     </div>
 </body>
 </html>

@@ -32,100 +32,93 @@
     <div class="inpage-nav">
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-overview">Overview</a>
+                <a href="#overview">Overview</a>
             </div>
         </div>
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-life-monitoring">Life Monitoring</a>
+                <a href="#air-traffic">Air Traffic Control</a>
                 <a class="arrow" onclick="expandNav(this)">‹</a>
             </div>
             <div class="nav-sub-section" >
-                <a href="#sec-life-monitoring1">Life Monitoring 1</a>
-                <a href="#sec-life-monitoring2">Life Monitoring 2</a>
+                <a href="#air-traffic1">Context</a>
+                <a href="#air-traffic2">Similarity with Trading</a>
+                <a href="#air-traffic3">Difference with Trading</a>
             </div>
         </div>
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-air-traffic">Air Traffic Control</a>
+                <a href="#life-monitoring">Life Monitoring</a>
                 <a class="arrow" onclick="expandNav(this)">‹</a>
             </div>
             <div class="nav-sub-section" >
-                <a href="#sec-life-monitoring1">Life Monitoring</a>
-                <a href="#sec-life-monitoring2">Life Monitoring</a>
+                <a href="#life-monitoring1">Context</a>
+                <a href="#life-monitoring2">Similarity with Trading</a>
+                <a href="#life-monitoring3">Difference with Trading</a>
             </div>
         </div>
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-idle-game">Idle Game</a>
+                <a href="#incremental-game">Incremental  Game</a>
                 <a class="arrow" onclick="expandNav(this)">‹</a>
             </div>
             <div class="nav-sub-section" >
-                <a href="#sec-life-monitoring1">Life Monitoring</a>
-                <a href="#sec-life-monitoring2">Life Monitoring</a>
+                <a href="#incremental-game1">Context</a>
+                <a href="#incremental-game2">Similarity with Trading</a>
+                <a href="#incremental-game3">Difference with Trading</a>
             </div>
         </div>
         <div class="nav-section">
             <div class="nav-sec-title">
-                <a href="#sec-e-commerce">E-Commerce</a>
+                <a href="#digital-marketing">Digital Marketing</a>
                 <a class="arrow" onclick="expandNav(this)">‹</a>
             </div>
             <div class="nav-sub-section" >
-                <a href="#sec-life-monitoring1">Life Monitoring</a>
-                <a href="#sec-life-monitoring2">Life Monitoring</a>
-            </div>
-        </div>
-        <div class="nav-section">
-            <div class="nav-sec-title">
-                <a href="#sec-end-user">End User Product</a>
-                <a class="arrow" onclick="expandNav(this)">‹</a>
-            </div>
-            <div class="nav-sub-section" >
-                <a href="#sec-life-monitoring1">Life Monitoring</a>
-                <a href="#sec-life-monitoring2">Life Monitoring</a>
+                <a href="#digital-marketing1">Context</a>
+                <a href="#digital-marketing2">Similarity with Trading</a>
+                <a href="#digital-marketing3">Difference with Trading</a>
             </div>
         </div>
     </div>
-
 </div>
 <div class="container">
     <div id="overview" class="section page-title-sec">
         <img class="page-icon" src="images/circles.svg">
         <div class="page-title">Analogous Domains</div>
-        <div class="page-intro">We conceptualized findings from secondary research and analogous domains into design guidelines that summarize the state-of-the-art practices.</div>
+        <div class="page-intro">Many professions need to make timely decisions in high-state situations as traders do. By diving deep into 6 analogous domains, we conceptualized the best practices into design guidelines and translate guidelines into design ideas which are applicable to the trading problem space.</div>
     </div>
-    <div id="attention" class="section">
+    <div id="air-traffic" class="section">
         <div class="smaller-section">
             <div class="h2">Air Traffic Control</div>
         </div>
         <div class="image mobile">
-            <img src="images/guidelines/getting-attention-1.png" alt="">
+            <img src="images/domains/air-traffic.png" alt="">
         </div>
-        <div id="attention1" class="smaller-section flex-h mobile-v">
+        <div id="air-traffic1" class="smaller-section flex-h mobile-v">
             <div>
                 <div class="label">Context</div>
                 <div class="h3">Ensuring safe, orderly flows of air traffic at airports</div>
-                <p>Attention is the most valuable resource traders have, and the value of an alert system is to help traders allocate their attention efficiently in a not annoying fashion. As every alert is an interruption to the on-going tasks, only be alarming when the alert requires immediate attention and present the rest of the alerts calmly. In the long run, the system will gain credibility for its accuracy and trust from traders.</p>
+                <p>Air traffic controllers station in airport control towers and direct aircraft in an orderly manner, by tracking aircraft visually on monitors, communicating with pilots, and making plans in the ever-changing environment.</p>
             </div>
             <div class="image right not-mobile">
-                <img src="images/guidelines/getting-attention-1.png" alt="">
+                <img src="images/domains/air-traffic.png" alt="">
             </div>
         </div>
-        <div id="attention2" class="smaller-section flex-h mobile-v">
+        <div id="air-traffic2" class="smaller-section flex-h mobile-v">
             <div>
-                <div class="label">Context</div>
-                <div class="h3">2. Increase situational awareness with an ambient alert</div>
-                <p>The ambient alert is a peripheral interface used continuously in the background. It does not prompt an immediate reaction but will increase situational awareness. For example, life monitoring in hospitals updates the screen calmly but continuously. It doesn't interfere with what nurses are doing, but can provide closure for patients' situations whenever they look at the screen.</p>
+                <div class="label">Similarity with Trading</div>
+                <div class="h3">Maintaining awareness for the situations with technologies</div>
+                <p>Air traffic controller and traders both deal with a great amount of stress and need to concentrate when many things are happening around them. In such a situation, air traffic control dashboards require a design that is situation-aware. The system must be prepared to evaluate and deliver key information to help with decision making. </p>
             </div>
             <div class="image right">
                 <!--                <img src="images/guidelines/getting-attention-2.png" alt="">-->
             </div>
         </div>
-        <div id="attention3" class="smaller-section flex-h mobile-v">
+        <div id="air-traffic3" class="smaller-section flex-h mobile-v">
             <div>
-                <div class="label">Context</div>
-                <div class="h3">3. Design for repetitive tolerance</div>
-                <p>A sound and animation may be pleasant when the first time, but consider what may users feel if they need to interact with it 100 times a day. To design for repetitive tolerance, the sound and the associated animation should not last longer than 0.3 seconds.</p>
+                <div class="label">Difference with Trading</div>
+                <div class="h3">Information is transparent in air traffic control</div>
+                <p>In air traffic control, all stakeholders are willing to share information and work together to ensure the safety of air transportation. While in trading, preventing information is a top priority for an investment team, and traders need to make decisions with limited information.</p>
             </div>
             <div class="image right">
                 <!--                <img src="images/guidelines/getting-attention-3.png" alt="">-->
@@ -133,16 +126,75 @@
         </div>
         <div class="smaller-section">
             <div class="flex-h btns-wrapper mobile-v">
-                <div class="btn-sec-title">Found in Domains</div>
+                <div class="btn-sec-title">Relevant Guidelines</div>
                 <div class="buttons">
-                    <a href="domains.html#air-traffic-control" class="button-solid dir">Air Traffic Control</a>
-                    <a href="domains.html#life-monitoring" class="button-solid dir">Life Monitoring</a>
+                    <a href="guidelines.html#attention" class="button-solid dir">Getting Attention</a>
+                    <a href="guidelines.html#action" class="button-solid dir">Call to Action</a>
                 </div>
             </div>
             <div class="space-above flex-h btns-wrapper mobile-v">
                 <div class="btn-sec-title">Related Prototypes</div>
                 <div class="buttons">
                     <a href="prototypes.html#visuals" class="button-solid dir">Visual and Animation</a>
+                    <a href="prototypes.html#informational" class="button-solid dir">Informational Alerts</a>
+                </div>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="separation-line"></div>
+        </div>
+    </div>
+    <div id="life-monitoring" class="section">
+        <div class="smaller-section">
+            <div class="h2">Life Monitoring</div>
+        </div>
+        <div class="image mobile">
+            <img src="images/domains/icu.png" alt="">
+        </div>
+        <div id="life-monitoring1" class="smaller-section flex-h mobile-v">
+            <div>
+                <div class="label">Context</div>
+                <div class="h3">Providing care for life-threatening medical conditions</div>
+                <p>Intensive care nurses specialize in taking care of critically ill or unstable patients by always accessing their situation, maintaining life support systems, and providing therapies.</p>
+            </div>
+            <div class="image right not-mobile">
+                <img src="images/domains/icu.png" alt="">
+            </div>
+        </div>
+        <div id="life-monitoring2" class="smaller-section flex-h mobile-v">
+            <div>
+                <div class="label">Similarity with Trading</div>
+                <div class="h3">Noticing emergency and guide timely decisions</div>
+                <p>Life monitoring system supervises the vitals signs of patients - heart rate, blood pressure, oxygen level, and respiration. As patients may deteriorate rapidly, nurses need to notice the situations on the monitor immediately and make decisions to provide necessary intervention. Similarly, traders work in the ever-changing market and need to take action to prevent severe losses.</p>
+            </div>
+            <div class="image right">
+                <!--                <img src="images/guidelines/getting-attention-2.png" alt="">-->
+            </div>
+        </div>
+        <div id="life-monitoring3" class="smaller-section flex-h mobile-v">
+            <div>
+                <div class="label">Difference with Trading</div>
+                <div class="h3">Clinicians monitor a few patients while traders have hundreds of orders</div>
+                <p>Hospitals ensure unstable patients are well-taken care of with sufficient staffing. In intensive care units, a nurse is only responsible only for a few patients, while traders may be handling hundreds of orders at the same time. Traders may require more assistant and automation from technologies than nurses do.</p>
+            </div>
+            <div class="image right">
+                <!--                <img src="images/guidelines/getting-attention-3.png" alt="">-->
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Relevant Guidelines</div>
+                <div class="buttons">
+                    <a href="guidelines.html#attention" class="button-solid dir">Getting Attention</a>
+                    <a href="guidelines.html#fatigue" class="button-solid dir">Alarm Fatigue</a>
+                    <a href="guidelines.html#customization" class="button-solid dir">Customization</a>
+                </div>
+            </div>
+            <div class="space-above flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Related Prototypes</div>
+                <div class="buttons">
+                    <a href="prototypes.html#visuals" class="button-solid dir">Visual and Animation</a>
+                    <a href="prototypes.html#action" class="button-solid dir">Actionable Alerts</a>
                     <a href="prototypes.html#minimized" class="button-solid dir">Minimized View</a>
                     <a href="prototypes.html#customizable" class="button-solid dir">Customizable Alert</a>
                 </div>
@@ -152,44 +204,123 @@
             <div class="separation-line"></div>
         </div>
     </div>
-    <div class="section references">
-        <div class="flex-h">
-            <div class="h2">Reference</div>
-            <a class="arrow-ref to-the-right" onclick="expandRef(this)">‹</a>
+    <div id="incremental-game" class="section">
+        <div class="smaller-section">
+            <div class="h2">Incremental Game</div>
         </div>
-        <div class="references-content">
-            <div class="title">Getting Attention</div>
-            <p>Attuning Notification Design to User Goals and Attention Costs McCrickard, D. Scott, and Christa M. Chewar. "Attuning notification design to user goals and attention costs." Communications of the ACM 46.3 (2003): 67-72.</p>
-            <p>How Functional Animation Helps Improve User Experience https://www.smashingmagazine.com/2017/01/how-functional-animation-helps-improve-user-experience/</p>
-            <p>Sound Advice: A Quick Guide to Designing UX Sounds https://www.toptal.com/designers/ux/ux-sounds-guide</p>
-            <div class="title">Call to Action</div>
-            <p>How To Design Notifications For Better UX https://uxplanet.org/how-to-design-notifications-for-better-ux-6fb0711be54d</p>
+        <div class="image mobile">
+            <img src="images/domains/game.png" alt="">
+        </div>
+        <div id="incremental-game1" class="smaller-section flex-h mobile-v">
+            <div>
+                <div class="label">Context</div>
+                <div class="h3">Playing with simple interaction over a long period</div>
+                <p>Idle games are games that a player can progress in without much interaction. With a little active playing time, idle games run mostly in the background. The games are flexible enough to be played in any way, and reward the players for waiting and coming back. </p>
+            </div>
+            <div class="image right not-mobile">
+                <img src="images/domains/game.png" alt="">
+            </div>
+        </div>
+        <div id="incremental-game2" class="smaller-section flex-h mobile-v">
+            <div>
+                <div class="label">Similarity with Trading</div>
+                <div class="h3">Gentle but constant engagement with the market</div>
+                <p>Traders need to engage with the market nine hours a day, five days a week. The commitment is not intense as they only need to take action once in a while, but they are always “playing the game.” This type of interaction is where incremental gaming techniques can be used.</p>
+            </div>
+            <div class="image right">
+                <!--                <img src="images/guidelines/getting-attention-2.png" alt="">-->
+            </div>
+        </div>
+        <div id="incremental-game3" class="smaller-section flex-h mobile-v">
+            <div>
+                <div class="label">Difference with Trading</div>
+                <div class="h3">Rules of games are predefined, but the market is unpredictable</div>
+                <p>Game design often evolves providing virtual rewards when rules are followed or building expectations of what will come next. As the behavior of the market is usually unpredictable, we need to be careful when adapting incremental gaming techniques.</p>
+            </div>
+            <div class="image right">
+                <!--                <img src="images/guidelines/getting-attention-3.png" alt="">-->
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Relevant Guidelines</div>
+                <div class="buttons">
+                    <a href="guidelines.html#attention" class="button-solid dir">Getting Attention</a>
+                    <a href="guidelines.html#action" class="button-solid dir">Call to Action</a>
+                    <a href="guidelines.html#customization" class="button-solid dir">Customization</a>
+                </div>
+            </div>
+            <div class="space-above flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Related Prototypes</div>
+                <div class="buttons">
+                    <a href="prototypes.html#action" class="button-solid dir">Actionable Alerts</a>
+                    <a href="prototypes.html#customizable" class="button-solid dir">Customizable Alert</a>
+                </div>
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="separation-line"></div>
         </div>
     </div>
-    <div class="section next-center two-item">
-        <div class="left">
-            <div class="label">PREVIOUS STEP</div>
-            <a href="guidelines.html">
-                <div class="card flex-h">
-                    <img class="card-icon" src="images/squares.svg">
-                    <div class="card-title">Guidelines</div>
-                </div>
-            </a>
+    <div id="digital-marketing" class="section">
+        <div class="smaller-section">
+            <div class="h2">Digital Marketing</div>
         </div>
-        <div class="right">
-            <div class="label">NEXT STEP</div>
-            <a href="prototypes.html">
-                <div class="card flex-h">
-                    <img class="card-icon" src="images/triagles.svg">
-                    <div class="card-title">Prototypes</div>
+        <div class="image mobile">
+            <img src="images/domains/" alt="">
+        </div>
+        <div id="digital-marketing1" class="smaller-section flex-h mobile-v">
+            <div>
+                <div class="label">Context</div>
+                <div class="h3">Use digital channels to build trust and brand awareness</div>
+                <p>Idle games are games that a player can progress in without much interaction. With a little active playing time, idle games run mostly in the background. The games are flexible enough to be played in any way, and reward the players for waiting and coming back. </p>
+            </div>
+            <div class="image right not-mobile">
+                <img src="images/domains/" alt="">
+            </div>
+        </div>
+        <div id="digital-marketing2" class="smaller-section flex-h mobile-v">
+            <div>
+                <div class="label">Similarity with Trading</div>
+                <div class="h3">Need to bulid trust with customers to be seens as signal but not noise</div>
+                <p>Traders need to engage with the market 9 hours a day, 5 days a week. The engagemet is not intense as they only need to take action once in awhile, but they are constantly “playing the game”. This type of interaction is where incremental gaming techniques can be used.</p>
+            </div>
+            <div class="image right">
+                <!--                <img src="images/guidelines/getting-attention-2.png" alt="">-->
+            </div>
+        </div>
+        <div id="digital-marketing3" class="smaller-section flex-h mobile-v">
+            <div>
+                <div class="label">Difference with Trading</div>
+                <div class="h3">Rules of games are predefined but the market is unpredictable</div>
+                <p>Game design often evolves providing virtual rewards when rules are followed or building expectations of what will come next. As the behavior of the market is usually unpredictable, we need to be careful when adapting incremental gaming techniques.</p>
+            </div>
+            <div class="image right">
+                <!--                <img src="images/guidelines/getting-attention-3.png" alt="">-->
+            </div>
+        </div>
+        <div class="smaller-section">
+            <div class="flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Relevant Guidelines</div>
+                <div class="buttons">
+                    <a href="guidelines.html#attention" class="button-solid dir">Getting Attention</a>
+                    <a href="guidelines.html#action" class="button-solid dir">Call to Action</a>
+                    <a href="guidelines.html#customization" class="button-solid dir">Customization</a>
                 </div>
-            </a>
+            </div>
+            <div class="space-above flex-h btns-wrapper mobile-v">
+                <div class="btn-sec-title">Related Prototypes</div>
+                <div class="buttons">
+                    <a href="prototypes.html#action" class="button-solid dir">Actionable Alerts</a>
+                    <a href="prototypes.html#customizable" class="button-solid dir">Customizable Alert</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="footer-wrapper">
-    <img src="images/combo-logo-color.svg">
-    <div>Copyright © 2019 Designed and Coded by Team Trufflin</div>
+    <div class="footer-wrapper">
+        <img src="images/combo-logo-color.svg">
+        <div>Copyright © 2019 Designed and Coded by Team Trufflin</div>
+    </div>
 </div>
 </body>
 </html>
