@@ -15,3 +15,13 @@ function expandRef(elem) {
         nav_section.addClass('opened');
     }
 }
+
+function openNavMenu() {
+    $('.nav-bg').addClass('visible');
+    $('.nav').addClass('visible');
+}
+
+function closeNavMenu() {
+    $('.nav-bg').removeClass('visible');
+    $('.nav').removeClass('visible');
+}
