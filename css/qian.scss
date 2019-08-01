@@ -110,6 +110,9 @@ img {
     height: 0;
   }
   .sound-image {
+    &:hover {
+      cursor: pointer;
+    }
     margin: 30px;
   }
   video {
@@ -251,6 +254,7 @@ a {
 }
 
 .card {
+  border-radius: 6px;
   margin: 20px;
   color: #444;
   padding: 30px 50px;
@@ -485,7 +489,7 @@ a.go-to-project {
     display: none;
     &.visible {
       display: block;
-      position: absolute;
+      position: fixed;
       width: 100vw;
       height: 100vh;
       background-color: #00000099;
@@ -502,6 +506,7 @@ a.go-to-project {
     margin-top: 100px;
   }
   .container {
+    width: 100%;
     margin: 0;
   }
   .tablet-mobile {
