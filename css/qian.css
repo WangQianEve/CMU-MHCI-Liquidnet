@@ -83,6 +83,20 @@ img {
   width: 100%;
 }
 
+.h2 {
+  font-size: var(--h2);
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: var(--h3);
+  font-weight: 600;
+}
+
+.mobile {
+  display: none;
+}
+
 .image {
   width: 40%;
   flex-shrink: 0;
@@ -193,19 +207,24 @@ img {
   transform: rotate(90deg);
 }
 .inpage-nav .nav-section.opened .nav-sub-section {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+.inpage-nav .nav-section.opened .nav-sub-section > a {
+  line-height: 2rem;
 }
 .inpage-nav .nav-section .nav-sec-title {
+  height: 50px;
   display: flex;
   font-weight: 400;
   justify-content: space-between;
+  align-items: center;
 }
 .inpage-nav .nav-section .nav-sec-title .arrow {
   text-align: center;
   cursor: pointer;
   height: 50px;
   width: 50px;
-  padding-left: 20px;
   padding-bottom: 10px;
   transform: rotate(-90deg);
   font-size: 24px;
@@ -418,6 +437,7 @@ a.go-to-project {
   margin: 0;
 }
 .next-center .card .card-icon {
+  width: 50px;
   margin-right: 20px;
 }
 .next-center.two-item {

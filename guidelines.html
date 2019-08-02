@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>CMU Liquidnet - Guidelines</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="css/shared.css" rel="stylesheet" type="text/css">
     <link href="css/qian.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
     <link href="images/trufflin_logo.png" rel="shortcut icon" type="image/x-icon">
@@ -15,18 +14,18 @@
     <img src="images/menu.svg" class="menu-button tablet-mobile" onclick="openNavMenu()">
     <div class="nav-bg tablet-mobile" onclick="closeNavMenu()"></div>
     <div class="nav">
-        <img class="nav-title-img" src="images/logo.png">
+        <img class="nav-title-img" src="images/logo.png" alt="website logo">
         <div class="nav-title"><a href="index.html">The Tradewell Playbook</a></div>
         <a class="btn red-bg active" href="guidelines.html">
-            <img src="images/squares-light.svg">
+            <img src="images/squares-light.svg" alt="guideline logo">
             <div>Guidelines</div>
         </a>
         <a class="btn blue-bg" href="domains.html">
-            <img src="images/circles-light.svg">
+            <img src="images/circles-light.svg" alt="domain logo">
             <div>Analogous Domains</div>
         </a>
         <a class="btn purple-bg" href="prototypes.html">
-            <img src="images/triagles-light.svg">
+            <img src="images/triagles-light.svg" alt="prototype logo">
             <div>Prototypes</div>
         </a>
         <div class="inpage-nav">
@@ -93,7 +92,7 @@
     </div>
     <div class="container">
         <div id="overview" class="section page-title-sec">
-            <img class="page-icon" src="images/squares.svg">
+            <img class="page-icon" src="images/squares.svg" alt="guideline icon">
             <div class="page-title">Guidelines</div>
             <div class="page-intro">We conceptualized findings from secondary research and analogous domains into design guidelines that summarize the state-of-the-art practices.</div>
         </div>
@@ -174,7 +173,7 @@
                 </div>
                 <div class="image right">
                     <img src="images/guidelines/guideline-call-to-action.png" alt="">
-                    <div class="caption">The call to action button on Spotify’s mobile homescreen</div>
+                    <div class="caption">The call to action button on Spotify’s mobile home screen</div>
                 </div>
             </div>
             <div id="action3" class="smaller-section flex-h mobile-v">
@@ -198,7 +197,7 @@
                 <div class="space-above flex-h btns-wrapper">
                     <div class="btn-sec-title">Related Prototypes</div>
                     <div class="buttons">
-                        <a href="prototypes.html#action" class="button-solid dir">Actionable Alerts</a>
+                        <a href="prototypes.html#actionable" class="button-solid dir">Actionable Alerts</a>
                         <a href="prototypes.html#informational" class="button-solid dir">Informational Alerts</a>
                         <a href="prototypes.html#grouped" class="button-solid dir">Grouped Alerts</a>
                     </div>
@@ -224,22 +223,22 @@
             </div>
             <div id="fatigue2" class="smaller-section flex-h mobile-v">
                 <div>
-                    <div class="h3">2. Suspend alerts that do not require immediate action</div>
-                    <p>A powerful way to reduce alarm fatigue is to delay forwarding information that does not require immediate action, or only send over a summary during users' downtime. At Johns Hopkins Health System, crisis alarms are sent immediately to the nurse, while technical alarms (e.g., lead failures or bed disconnects) can be delayed or sometimes auto-corrected or silenced. During one week, out of the 61,227 warning levels alarms on their physiological monitors, only 3,103 were sent out to mobile devices.</p>
+                    <div class="h3">2. Aggregation and Routing</div>
+                    <p>A primary way to avoid alert fatigue is to reduce the perceived alert amount on the users' side. Aggregation groups related alerts or alerts with similar next steps into one message. Also, when handling alerts with team effort, alerts should be routed to the person that can best handle them, instead of going into a single team inbox. Both techniques can significantly increase the signal to noise ratio.</p>
                 </div>
                 <div class="image right">
-                    <img src="images/guidelines/" alt="">
-                    <div class="caption"></div>
+                    <img src="images/guidelines/guideline-routing.png" alt="">
+                    <div class="caption">Example of routing from an incident management system</div>
                 </div>
             </div>
             <div id="fatigue3" class="smaller-section flex-h mobile-v">
                 <div>
                     <div class="h3">3. Customize alarm threshold and calibrate continuously</div>
-                    <p>Setting a threshold for firing an alert and directing alerts to accountable personnel only are two powerful ways to reduce alarm fatigue. In Johns Hopkins Health System, the alert algorithm is customized based on the demographics of the patients, clinical workflows, time of the day, staffing schedules, etc. Nurses are encouraged to adjust the alert threshold without physicians' orders to make monitor more actionable. </p>
+                    <p>Setting a threshold for firing an alert and directing alerts to accountable personnel only are two powerful ways to reduce alarm fatigue. In Johns Hopkins Health System, the alert algorithm is customized based on the demographics of the patients, clinical workflow, time of the day, staffing schedules, etc. Nurses are encouraged to adjust the alert threshold without physicians' orders to make monitor more actionable. </p>
                 </div>
                 <div class="image right">
-                    <img src="images/guidelines/" alt="">
-                    <div class="caption"></div>
+                    <img src="images/guidelines/guideline-setting-threshold.png" alt="">
+                    <div class="caption">Nurses can set the alarm limits for each patient on vital sign monitors.</div>
                 </div>
             </div>
             <div class="smaller-section">
@@ -325,7 +324,7 @@
                 </div>
                 <div class="image right">
                     <img src="images/guidelines/trust1.png" alt="">
-                    <div class="caption">The honestbee website ask for user’s personal information before letting users to experience the product</div>
+                    <div class="caption">The "honestbee" website ask for user’s personal information before letting users to experience the product</div>
                 </div>
             </div>
             <div id="trust2" class="smaller-section flex-h mobile-v">
@@ -372,6 +371,7 @@
                 <div class="title">Avoiding Alarm Fatigue</div>
                 <p>5 Technology tools for reducing alarm fatigue - Becker's Hospital Review https://www.beckershospitalreview.com/healthcare-information-technology/5-technology-tools-for-reducing-alarm-fatigue.html</p>
                 <p>Signal Detection & UX Design https://www.slideshare.net/LilyZimmerman/signal-detection-ux-design-a-look-at-instagrams-notification-feed</p>
+                <p>Reducing Alert Noise: Going from 1000 Alerts to 10 Alerts Overnight  https://victorops.com/blog/reducing-alert-noise-going-1000-alerts-10-alerts-overnight</p>
                 <div class="title">Customization</div>
                 <p>7 Tips for Successful Customization https://www.nngroup.com/articles/customization/?lm=customization-personalization&pt=article</p>
                 <p>Customization vs. Personalization in the User Experience https://www.nngroup.com/articles/customization-personalization/</p>
@@ -386,13 +386,13 @@
             <div class="label">NEXT STEP</div>
             <a href="domains.html">
                 <div class="card flex-h">
-                    <img class="card-icon" src="images/circles.svg">
+                    <img class="card-icon" src="images/circles.svg" alt="analogous domain icon">
                     <div class="card-title">Analogous Domains</div>
                 </div>
             </a>
         </div>
         <div class="footer-wrapper">
-            <img src="images/combo-logo-color.svg">
+            <img src="images/combo-logo-color.svg" alt="team logo">
             <div>Copyright © 2019 Designed and Coded by Team Trufflin</div>
         </div>
     </div>
