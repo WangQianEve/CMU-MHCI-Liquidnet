@@ -112,6 +112,9 @@ img {
 .image .sound-image {
   margin: 30px;
 }
+.image .sound-image:hover {
+  cursor: pointer;
+}
 .image video {
   width: 100%;
 }
@@ -239,6 +242,7 @@ a {
 }
 
 .card {
+  border-radius: 6px;
   margin: 20px;
   color: #444;
   padding: 30px 50px;
@@ -471,7 +475,7 @@ a.go-to-project {
   }
   .nav-bg.visible {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background-color: #00000099;
@@ -490,6 +494,7 @@ a.go-to-project {
   }
 
   .container {
+    width: 100%;
     margin: 0;
   }
 
@@ -588,7 +593,7 @@ a.go-to-project {
   }
 
   .button-solid.dir {
-    margin: 15px 10px 0px 0;
+    margin: 15px 0 0 10px;
     padding: 3px 15px;
     font-size: 12px;
   }
